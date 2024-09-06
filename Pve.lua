@@ -1,6 +1,6 @@
 
 
-UI.Separator()
+setDefaultTab("Pve")
 UI.Label('-- [UP] --'):setColor('green')
 
 storage.widgetPos = storage.widgetPos or {};
