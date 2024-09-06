@@ -136,3 +136,16 @@ antidrop = macro(200, "Anti-Red", function()
   end
 end)
 addIcon("AntiRed", {item=12616, text="AntiRed"},antidrop)
+
+UI.Separator()
+
+UI.Label("Config % Mystic/kai")
+
+UI.Label("Usar Hp Menor")
+addTextEdit("Mystic defense", storage.mystichp or "Mystic defense", function(widget, text) storage.mystichp = text
+end)
+
+UI.Label("Tirar Com Hp Maior Que")
+addTextEdit("Mystic kai", storage.mystichpkai or "Mystic kai", function(widget, text) storage.mystichpkai = text
+end)
+
