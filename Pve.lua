@@ -98,7 +98,7 @@ local toInteger = function(number)
   return tonumber(number[1]);
 end
 
-antidrop = macro(1, "Anti-Red", function()
+antidrop = macro(200, "Anti-Red", function()
   local pos, monstersCount = pos(), 0;
   if (player:getSkull() >= 3) then
     addAntiRedTime();
