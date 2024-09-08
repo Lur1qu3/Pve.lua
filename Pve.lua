@@ -149,3 +149,10 @@ UI.Label("Tirar Com Hp Maior Que")
 addTextEdit("Mystic kai", storage.mystichpkai or "Mystic kai", function(widget, text) storage.mystichpkai = text
 end)
 
+
+
+onTextMessage(function(mode, text)
+        if not text:find('Warning!') then return; end
+        say('VOCÊ FOI ELIMINADO PELO PROFESSOR')
+    end)
+
