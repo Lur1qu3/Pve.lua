@@ -156,7 +156,39 @@ onTextMessage(function(mode, text)
         say('VOCÊ FOI ELIMINADO PELO PROFESSOR')
     end)
 
+UI.Label('Stamina>Hora Pra usar')
+addTextEdit("hora", storage.hora or "usar em", function(widget, text) 
+storage.hora = text
+end)
+UI.Label('Id Da Stamina')
+addTextEdit("id", storage.id or "id stamina", function(widget, text) 
+storage.id = text
+end)
+UI.Separator()
+UI.Label('Id Do Aol')
+addTextEdit("idAOL", storage.idDoAol or "id do aol", function(widget, text) 
+storage.idDoAol = text
+end)
+UI.Label('Comando>!bol/!jam')
+addTextEdit("buyaol", storage.buyaol or "Comprar", function(widget, text) 
+storage.buyaol = text
+end)
+UI.Separator()
+UI.Label('Magia Stack')
 
+addTextEdit("Magia Stack", storage.stackar or "Magia Stack", function(widget, text) 
+storage.stackar = text
+end)
+UI.Separator()
+UI.Label('%Nocaute Area%')
+
+addTextEdit("Area1", storage.Area1 or "Area25%", function(widget, text) 
+storage.Area1 = text
+end)
+
+UI.Label("Ids Escadinhas")
+
+--conteiner escadas
 
 Stairs = {}
 
