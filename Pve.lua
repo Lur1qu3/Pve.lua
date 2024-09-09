@@ -439,7 +439,7 @@ end
 
 Stairs.walk =
     macro(
-    100,
+    1,
     function()
         if modules.corelib.g_keyboard.isKeyPressed("Escape") then
             return Stairs.walk.setOff()
