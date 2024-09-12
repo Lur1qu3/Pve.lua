@@ -1,5 +1,3 @@
-
-
 setDefaultTab("Pve")
 UI.Label('-- [UP] --'):setColor('green')
 
