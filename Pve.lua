@@ -203,6 +203,12 @@ onTextMessage(function(mode, text)
         say('VOCÊ FOI ELIMINADO PELO PROFESSOR')
     end)
 
+UI.Label("Receber PM:")
+UI.TextEdit(storage.nomeDoJogador or "Nome Para Receber", function(widget, text)
+  storage.nomeDoJogador = text
+  NomeDoJogador = text
+end)
+
 UI.Label('Stamina>Hora Pra usar')
 addTextEdit("hora", storage.hora or "usar em", function(widget, text) 
 storage.hora = text
