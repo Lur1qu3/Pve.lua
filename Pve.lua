@@ -203,7 +203,14 @@ onTextMessage(function(mode, text)
         say('VOCÊ FOI ELIMINADO PELO PROFESSOR')
     end)
 
-UI.Label("Receber PM:")
+
+UI.Label('Ids Escadinhas')
+addTextEdit("IDS, IDS...", storage.escadinhas or "IDS, IDS...", function(widget, text)
+    storage.escadinhas = text
+end)
+
+
+UI.Label("[VIGIA]: Receber PM:")
 UI.TextEdit(storage.nomeDoJogador or "Nome Para Receber", function(widget, text)
   storage.nomeDoJogador = text
   NomeDoJogador = text
